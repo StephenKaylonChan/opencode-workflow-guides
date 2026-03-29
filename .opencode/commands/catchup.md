@@ -9,8 +9,10 @@ subtask: true
 @AGENTS.md
 @README.md
 @docs/architecture/README.md
+@docs/development/getting-started.md
 @docs/development/contributing.md
 @docs/roadmap/README.md
+@docs/roadmap/phase-6-实战验证与优化.md
 @.opencode/session-notes.md
 
 如有最近调研文档，也纳入总结。

@@ -1,7 +1,7 @@
 # OpenCode 参考文档
 
 > **文档性质**: 通用参考文档，可复用于任何项目
-> **版本**: v1.3（2026-03）
+> **版本**: v1.4（2026-03）
 
 本目录是原 `guides/` 的 OpenCode 迁移版。
 
@@ -121,6 +121,7 @@ project-root/
 
 | 版本 | 日期 | 说明 |
 |------|------|------|
+| v1.4 | 2026-03 | 用 OpenCode 原生配置管理 `guides-opencode` 仓库自身，补齐上手文档、catchup/handoff 状态和 commands vs skills 边界说明 |
 | v1.3 | 2026-03 | 将 `base-project` 扩成可直接复制的脚手架：补充自定义 agents、ADR/phase 模板、`audit`/`review`/`test` 命令与 `.gitignore` |
 | v1.2 | 2026-03 | 吸收官方与社区实践：补充配置优先级、细粒度权限、`subtask` 用法、compaction/watcher/plugin 依赖模板与 research 记录 |
 | v1.1 | 2026-03 | 补充 `templates/base-project/`，增加更完整的 commands、skills、plugins 与开发文档模板 |
@@ -129,4 +130,4 @@ project-root/
 ---
 
 **文档性质**: 通用参考模板（可跨项目复用）
-**最后更新**: 2026-03（v1.3）
+**最后更新**: 2026-03（v1.4）

@@ -2,7 +2,7 @@
 
 > 用 OpenCode 原生规则体系替代 Claude Code 的 `CLAUDE.md` 设计
 
-**版本**: v1.3
+**版本**: v1.4
 **适用**: OpenCode（2026 年）
 
 ---
@@ -63,6 +63,14 @@ OpenCode 的规则层核心不是 Hooks，而是：
 - OpenCode 支持 `CLAUDE.md` 兼容，但应以 `AGENTS.md` 为主
 - OpenCode 不会像 Claude Code 那样天然把 `@path` 当成完整模块化引用体系
 - 更推荐用 `instructions` 字段统一加载文档，或在 `AGENTS.md` 中明确要求 agent 按需读取外部文件
+
+### 推荐补一句“如何读取引用文档”
+
+如果你在 `AGENTS.md` 中使用 `@docs/...` 这类引用，SHOULD 明确告诉 OpenCode：
+
+- 遇到这些引用时，按需用 Read 工具读取
+- 不要一开始把所有引用全部加载
+- 读取后将其视为当前任务相关的正式约束
 
 ### 配置优先级
 
@@ -273,4 +281,4 @@ Monorepo 下的经验是：
 
 ---
 
-**版本**: v1.3
+**版本**: v1.4

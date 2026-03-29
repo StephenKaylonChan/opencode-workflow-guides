@@ -7,5 +7,6 @@ agent: plan
 
 1. 总结本次对主文档、模板、research 的改动
 2. 检查是否需要更新 roadmap phase 进度
-3. 将当前状态写入 `.opencode/session-notes.md`
-4. 输出下一步建议
+3. 检查是否需要更新 `README.md` 版本记录
+4. 将当前状态写入 `.opencode/session-notes.md`
+5. 输出下一步建议

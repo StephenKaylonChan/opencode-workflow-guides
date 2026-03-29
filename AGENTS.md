@@ -42,6 +42,16 @@
 - 新增机制已落到文档和模板，而不是只改其中一侧
 - 若涉及长期维护方式变化，需同步 `docs/development/contributing.md`
 
+## External File Loading
+
+CRITICAL: 当你遇到下面这些 `@docs/...` 引用时，使用 Read 工具按需读取。
+
+规则：
+- 不要一开始把所有引用全部加载
+- 只在当前任务需要时读取相关文档
+- 读取后将其视为当前任务的正式约束
+- 如果当前任务涉及 roadmap 或维护流程，优先读取相关 phase 文件和 development 文档
+
 ## 当前项目状态
 
 @docs/architecture/README.md
