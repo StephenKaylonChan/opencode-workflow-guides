@@ -1,0 +1,5 @@
+.idea/
+.DS_Store
+.opencode/node_modules/
+.opencode/.cache/
+.opencode/*.local.*

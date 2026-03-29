@@ -1,0 +1,75 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "anthropic/claude-sonnet-4-5",
+  "small_model": "anthropic/claude-haiku-4-5",
+  "instructions": [
+    "README.md",
+    "docs/architecture/README.md",
+    "docs/development/contributing.md",
+    "docs/roadmap/README.md"
+  ],
+  "permission": {
+    "*": "ask",
+    "read": {
+      "*": "allow",
+      "*.env": "deny",
+      "*.env.*": "deny",
+      "*.env.example": "allow"
+    },
+    "bash": {
+      "*": "ask",
+      "ls *": "allow",
+      "find *": "allow",
+      "rg *": "allow",
+      "grep *": "allow",
+      "sed *": "allow",
+      "wc *": "allow",
+      "git status*": "allow",
+      "git diff*": "allow",
+      "git log*": "allow",
+      "git add *": "ask",
+      "git commit *": "ask",
+      "git push *": "deny",
+      "git reset --hard*": "deny",
+      "rm *": "deny"
+    },
+    "skill": {
+      "*": "ask",
+      "docs-refresh": "allow",
+      "version-sync": "allow",
+      "audit-checklist": "allow"
+    }
+  },
+  "agent": {
+    "plan": {
+      "permission": {
+        "edit": "deny"
+      }
+    },
+    "build": {
+      "permission": {
+        "edit": "ask"
+      }
+    }
+  },
+  "compaction": {
+    "auto": true,
+    "prune": true,
+    "reserved": 10000
+  },
+  "watcher": {
+    "ignore": [
+      ".idea/**",
+      ".opencode/node_modules/**",
+      ".git/**",
+      ".DS_Store"
+    ]
+  },
+  "formatter": {
+    "prettier": {
+      "command": ["npx", "prettier", "--write", "$FILE"],
+      "extensions": [".md", ".json", ".jsonc"]
+    }
+  },
+  "snapshot": true
+}
