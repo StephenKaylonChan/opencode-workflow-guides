@@ -3,12 +3,23 @@
 > **文档性质**: 通用参考文档，可复用于任何项目
 > **版本**: v1.4（2026-03）
 
+OpenCode workflow guides, migration prompts, and reusable project templates.
+
 为 OpenCode 准备的一套工作流指南、初始化 prompt 和可复制模板。
 
 这个仓库的目标很直接：
 - 保留 Claude Code 时代里真正有效的方法论
 - 用 OpenCode 自己的 `AGENTS.md`、`opencode.json`、`.opencode/commands/`、`.opencode/skills/`、plugins 重新落地
 - 让新项目、旧项目迁移、后续升级都能重复执行，而不是每次从头摸索
+
+---
+
+## 一眼看懂
+
+- 想新建 OpenCode 工作流：看 [`prompt-新项目初始化.md`](./prompt-%E6%96%B0%E9%A1%B9%E7%9B%AE%E5%88%9D%E5%A7%8B%E5%8C%96.md)
+- 想迁移 Claude Code 项目：看 [`prompt-旧项目迁移.md`](./prompt-%E6%97%A7%E9%A1%B9%E7%9B%AE%E8%BF%81%E7%A7%BB.md)
+- 想直接拿模板开工：看 [`templates/base-project/`](./templates/base-project/)
+- 想理解设计方法：从 [`00-日常使用说明.md`](./00-%E6%97%A5%E5%B8%B8%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.md) 开始
 
 ---
 
@@ -39,17 +50,29 @@
 - [`templates/base-project/`](./templates/base-project/)
 - [`00-日常使用说明.md`](./00-%E6%97%A5%E5%B8%B8%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E.md)
 
+最适合：
+- 已经知道自己想要什么
+- 想先跑起来，再按需裁剪
+
 ### 方式 2：让 OpenCode 帮你初始化新项目
 
 在目标项目里打开 OpenCode，然后使用：
 
 - [`prompt-新项目初始化.md`](./prompt-%E6%96%B0%E9%A1%B9%E7%9B%AE%E5%88%9D%E5%A7%8B%E5%8C%96.md)
 
+最适合：
+- 想把初始化过程交给 agent 执行
+- 想让 OpenCode 根据项目技术栈生成第一版配置
+
 ### 方式 3：迁移已有 Claude Code 项目
 
 如果项目里已经有 `CLAUDE.md`、`.claude/skills/`、hooks 之类旧体系，使用：
 
 - [`prompt-旧项目迁移.md`](./prompt-%E6%97%A7%E9%A1%B9%E7%9B%AE%E8%BF%81%E7%A7%BB.md)
+
+最适合：
+- 现有项目已经有 `CLAUDE.md`、`.claude/skills/`、hooks
+- 想保留方法论，但切到 OpenCode 配置体系
 
 ---
 
